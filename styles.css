@@ -46,4 +46,17 @@
     border: none;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
+  } 
+  
+  button:hover {
+    background-color: #004080;
+  }
+  
+  #resultContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
