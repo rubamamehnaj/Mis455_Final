@@ -35,3 +35,26 @@ function searchCountry() {
       const languages = country.languages
         ? Object.values(country.languages).join(", ")
         : "N/A";
+
+        const html = `
+        <div class="country-info">
+          <h2>${name}</h2>
+          <img src="${flag}" alt="Flag of ${name}">
+          <p><strong>Capital:</strong> ${capital}</p>
+          <p><strong>Currency:</strong> ${currencies}</p>
+          <p><strong>Region:</strong> ${region}</p>
+          <p><strong>Population:</strong> ${population}</p>
+          <p><strong>Languages:</strong> ${languages}</p>
+        </div>
+      `;
+
+      resultContainer.innerHTML = html;
+
+      // Clear input and scroll to result
+      countryInput.value = "";
+      resultContainer.scrollIntoView({ behavior: "smooth" });
+    })
+    .catch(error => {
+      resultContainer.innerHTML = `<p style="color:red;">${error.message}</p>`;
+    });
+}
