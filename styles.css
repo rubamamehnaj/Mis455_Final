@@ -38,3 +38,12 @@
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
   }
+
+  button {
+    padding: 0.6rem 1rem;
+    background-color: #0055aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+  }
