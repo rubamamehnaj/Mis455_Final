@@ -47,7 +47,7 @@
     cursor: pointer;
     border-radius: 0 5px 5px 0;
   } 
-  
+
   button:hover {
     background-color: #004080;
   }
@@ -59,4 +59,8 @@
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .country-info {
+    text-align: center;
   }
