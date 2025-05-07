@@ -18,7 +18,9 @@
     color: white;
     text-align: center;
     padding: 1rem 0;
-  }  main {
+  } 
+
+  main {
     flex: 1;
     padding: 2rem;
   }
